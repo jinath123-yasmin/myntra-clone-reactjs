@@ -1,0 +1,124 @@
+.product-image img {
+    width: 100%;
+    height: auto;
+    box-sizing: content-box;
+}
+
+.product-image {
+    width: 230px;
+}
+
+.each-item {
+    margin: 13px;
+    width: 230px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.product-brand {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-additionalInfo {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.product-details {
+    margin-top: 3px;
+}
+
+.product-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: #282c3f;
+}
+
+.product-mrp {
+    text-decoration: line-through;
+    color: #7e818c;
+    font-weight: 400;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.product-discount-percentage {
+    color: #fa681f;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.product-info-container {
+    padding-left :10px;
+}
+
+@media(max-width: 468px) {
+    .home-wrapper .home-container {
+        margin-top: 10px;
+    }
+    .product-image {
+        width: 41.735vw;
+    }
+    a {
+        margin: auto;
+    }
+    .each-item {
+        width: 42vw;
+        margin: 5px;
+    }
+    .product-info-container {
+        padding-left: 3px;
+    }
+}
+
+@media(min-width: 469px) and (max-width: 661px) {
+    .home-wrapper .home-container {
+        margin-top: 10px;
+    }
+    .product-image {
+        width: 45vw;
+    }
+    a {
+        margin: auto;
+    }
+    .each-item {
+        width: 42vw;
+        margin: 5px;
+    }
+    .product-info-container {
+        padding-left: 3px;
+    }
+}
+
+@media(min-width: 662px) and (max-width: 1022px) {
+    .filter-holder {
+        width: 35vw;
+    }
+    .home-wrapper .home-container {
+        margin-top: 10px;
+    }
+    .product-image {
+        width: 27vw;
+    }
+    a {
+        margin: auto;
+    }
+    .each-item {
+        width: 27vw;
+        margin: 10px 5px;
+    }
+    .product-info-container {
+        padding-left: 3px;
+    }
+}

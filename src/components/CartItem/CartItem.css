@@ -1,0 +1,147 @@
+
+.cart-item-brand{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #282c3f;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.cart-item-info {
+    color: #535766;
+    font-size: 14px;
+    line-height: 1;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+
+.product-quantity {
+    margin: 7px 0;
+}
+
+.return-logo {
+    width: 15px;
+}
+
+.return-time {
+    margin: 5px 0;
+}
+
+.cartItem-14days {
+    font-weight: 600;
+}
+
+.cart-product {
+    display: flex;
+    width: 40vw;
+    margin: 10px;
+    border: 1px solid rgb(185, 181, 181);
+}
+
+.cart-wrapper-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
+
+.item-image {
+    width: 121px;
+}
+
+.cart-item-container {
+    display: flex;
+}
+
+.product-details div {
+    padding: 2px 0;
+}
+
+.cart-item-details {
+    margin-left: 11px;
+}
+
+.product-quantity button {
+    width: 30px;
+    padding: 6px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.minus {
+    margin-right: 20px;
+    background-color: #ff3e6c;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.plus {
+    margin-left: 20px;
+    background-color: #ff3e6c;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.quantity-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cancel-button {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 465px){
+    .cart-product {
+        width: 90vw;
+        margin: 10px auto;
+    }
+    .item-image {
+        width: 100px;
+        height: 150px;
+    }    
+    .cart-item-brand{
+        font-size: 12px;
+        font-weight: 800;
+    }
+    .cart-item-info {
+        font-size: 10px;
+    }
+    .minus,.plus {
+        margin: 0 3px;
+        font-size: 15px;
+        font-weight: 600;
+    } 
+    .product-quantity button {
+        width: 20px;
+        padding: 3px 0;
+    }
+    .quantity-text {
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .return-time {
+        margin: 0;
+        font-size: 9px;
+        font-weight: 600;
+    }   
+    .return-logo {
+        width: 8px;
+    }
+    .cartItem-14days {
+        font-size: 10px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (min-width: 466px) and (max-width: 768px){
+    .cart-product {
+        width: 90vw;
+        margin: 10px auto;
+    }
+}

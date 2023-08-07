@@ -1,0 +1,271 @@
+.container {
+    position: sticky;
+    top: 0;
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 5px 12px 0 rgba(0,0,0,.05);
+}
+
+.left-container,.right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-links {
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-logo {
+    width: 51px;
+    margin: 0 40px;
+    cursor: pointer;
+}
+
+.nav-text {
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-text p {
+    cursor: pointer;
+}
+
+.search {
+    width: 25vw;
+    padding: 7px 0;
+    padding-left: 20px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid rgb(235, 231, 231);
+    background-color: rgb(241, 239, 239);
+}
+
+.profile-wishlist-bag {
+    display: flex;
+}
+
+.profile,.wishlist,.bag {
+    padding: 0 12px;
+}
+
+.profile-wishlist-bag img {
+    width: 25px;
+    margin-left: 20px;
+}
+
+.profile-img {
+    width: 100%;
+    height: auto;
+}
+
+.login-logout-wrapper {
+    display: none;
+}
+
+.profile-img-wrapper {
+    height: 11vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.profile-img-wrapper:hover .login-logout-wrapper {
+    position: absolute;
+    top: 100%;
+    left: -200%;
+    display: block;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid rgb(216, 213, 213);
+    background-color: white;
+}
+
+.wishlist-wrapper {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.bag-wrapper img {
+    cursor: pointer;
+}
+
+.bag-wrapper {
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    position: relative;
+}
+
+.bag-span {
+    padding: 0 6px;
+    height: 18px;
+    background: #ff3f6c;
+    position: absolute;
+    border-radius: 50%;
+    font-size: 12px;
+    color: white;
+    right: -10px;
+    top: 7px;
+    font-weight: 700;
+}
+
+.wecome-login-text {
+    font-weight: 500;
+}
+.some-login-text {
+    font-size: 11px;
+    color: rgb(151, 150, 150);
+}
+
+.login-logout-button {
+    padding: 7px 7px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid rgb(226, 221, 221);
+    color: #ff3f6c;
+    font-size: 14px;    
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hamburger-icon {
+    display: none; /* Hide the hamburger icon by default for larger screens */
+}
+.hamburger-icon.show {
+    /* height: 50px; */
+    margin-left: 0;
+    /* margin-bottom: 15px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgb(141, 139, 139); */
+}
+.header-links.show{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45%;
+    z-index: 100;
+    background-color: white;
+    padding: 15px 15px;
+    box-shadow: 0 5px 12px 0 rgba(0,0,0,.05);
+}
+.header-links.show .nav-text p {
+    font-weight: 700;
+}
+
+.hamburgur-icon-login-signup-button {
+    color: #ff3f6c;
+    background: none; 
+    font-weight: 600; 
+    font-size: 18px; 
+    border: none;
+    cursor: pointer;
+    border: 1px solid #ff3f6c;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.navbar-orders-link:hover {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media(max-width: 768px) {
+    .image-logo {
+        width: 45px;
+        margin: 0 25px;
+    }
+    .header-links {
+        width: 30vw;
+    }
+    .hamburger-icon {
+        display: block; /* Show the hamburger icon for smaller screens */
+        margin-left: 25px;
+        cursor: pointer;
+    }
+    .header-links {
+        display: none;
+    }
+    .profile-img-wrapper {
+        display: none;
+    }
+    .search {
+        width: 40vw;
+    }
+
+    .navbar-filter-heading {
+        color: rgb(29, 28, 28);
+        font-size: 16px;
+    }    
+    .navbar-filter-text {
+        margin-bottom: 3px;
+        padding: 1px 0;
+        padding-left: 10px;
+        font-size: 15px;
+        font-weight: 500;
+        color: rgb(58, 58, 58);
+        cursor: pointer;
+    }
+    .welcome-login-text {
+        font-size: 17px;
+        font-weight: 500;
+    }
+    .some-login-text {
+        font-size: 12px;
+    }
+    .login-logout-button {
+        padding: 5px 5px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 468px) {
+    .hamburger-icon {
+        margin-left: 10px;
+    }
+    .image-logo {
+        margin: 0 10px;
+    }
+    .search {
+        width: 42vw;
+        padding-left: 3px;
+    }
+    .search::placeholder {
+        font-size: 11px;
+    }
+    .profile-wishlist-bag img {
+        margin-left: 10px;
+    }
+    .bag-wrapper {
+        margin-right: 10px;
+    }
+    .header-links.show {
+        padding: 10px 10px;
+    }
+    .hamburgur-icon-login-signup-button {
+        font-size: 14px;
+    }
+    .navbar-filter-container .filter-text {
+        padding-left: 7px;
+    }
+}

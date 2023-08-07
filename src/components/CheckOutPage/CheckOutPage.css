@@ -1,0 +1,19 @@
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media(max-width: 468px) {
+    .checkout-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media(min-width: 469px) and (max-width: 768px) {
+    .checkout-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}

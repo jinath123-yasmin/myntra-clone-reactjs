@@ -1,0 +1,11 @@
+.payment-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media(min-width: 469px) and (max-width: 768px) {
+    .payment-page-container {
+        flex-direction: column;
+    }
+}
